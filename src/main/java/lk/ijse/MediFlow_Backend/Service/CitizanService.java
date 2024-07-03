@@ -30,4 +30,8 @@ public class CitizanService {
         Citizan citizan=  citizanRepo.findByFirstNameAndPassword(first_name,password);
         return modelMapper.map(citizan,CitizanDto.class);
     }
+    public CitizanDto getCitizanById(String nic){
+        Citizan user=  citizanRepo.getCitizanrById(nic);
+        return modelMapper.map(user,CitizanDto.class);
+    }
 }

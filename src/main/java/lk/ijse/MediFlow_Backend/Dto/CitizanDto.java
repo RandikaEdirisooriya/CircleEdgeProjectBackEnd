@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class CitizanDto {
     private  int id;
-    private String code;
+    private String NIC;;
     private String FirstName;
     private String LastName;
     private String ContactNumber;

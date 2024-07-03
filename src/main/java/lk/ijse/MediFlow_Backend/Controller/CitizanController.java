@@ -59,4 +59,9 @@ import org.springframework.web.bind.annotation.*;
             System.out.println(first_name + " ," + password);
             return citizanService.getCitizanByPassword(first_name, password);
         }
+        @GetMapping("/getCitizanById/{nic}")
+        public CitizanDto getCitizanById(@PathVariable String nic){
+            System.out.println(nic);
+            return citizanService.getCitizanById(nic);
+        }
     }

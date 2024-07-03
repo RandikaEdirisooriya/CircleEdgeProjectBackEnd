@@ -14,6 +14,7 @@ public class Citizan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  int id;
+    @Column(name = "nic" ,unique = true,nullable = false)
     private String NIC;
     @Column(name = "first_name" ,unique = true,nullable = false)
     private String FirstName;
